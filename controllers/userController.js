@@ -14,7 +14,7 @@ export const loginController = async (req, res) => {
         res.status(200).json({ success: true, user })
 
     } catch (error) {
-        res.status(400).json({ ststus: false, error })
+        res.status(400).json({ success: false, error })
     }
 }
 
@@ -25,6 +25,6 @@ export const registerController = async (req,res) => {
         await newUser.save()
         res.status(201).json({success:true,newUser})
     } catch (error) {
-        res.status(400).json({ ststus: false, error })
+        res.status(400).json({ success: false, error })
     }
 }

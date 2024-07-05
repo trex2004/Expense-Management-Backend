@@ -3,7 +3,8 @@ import cors from 'cors'
 import morgan from 'morgan'
 import dotenv from 'dotenv'
 import connectDB from './config/connectDB.js'
-import router from './routes/userRoutes.js'
+import userRouter from './routes/userRoutes.js'
+import transactionRouter from './routes/transactionRoutes.js'
 
 
 //constants
@@ -19,7 +20,9 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cors())
 
 //routes
-app.use('/api/v1/users',router)
+app.use('/api/v1/users',userRouter)
+app.use('/api/v1/transactions',transactionRouter)
+
 
 //server start
 try{
