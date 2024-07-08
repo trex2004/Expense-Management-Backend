@@ -1,5 +1,5 @@
 import express from 'express'
-import { addTransactions, getAllTransactions } from '../controllers/transactionControllers.js'
+import { addTransactions, deleteTransactions, editTransactions, getAllTransactions } from '../controllers/transactionControllers.js'
 
 const router = express.Router()
 
@@ -7,7 +7,13 @@ const router = express.Router()
 //add transactions
 router.post('/add-transaction',addTransactions)
 
+//edit transactions
+router.post('/edit-transaction',editTransactions)
+
+//delete transactions
+router.post('/delete-transaction',deleteTransactions)
+
 //get all tracsactions
-router.get('/get-transactions',getAllTransactions)
+router.post('/get-transactions',getAllTransactions)
 
 export default router
