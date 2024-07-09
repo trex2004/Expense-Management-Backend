@@ -4,8 +4,8 @@ import userModel from '../models/usersModel.js'
 export const loginController = async (req, res) => {
     try {
         console.log(req.body)
-        const { name, password } = req.body
-        const user = await userModel.findOne({ name, password })
+        const { email, password } = req.body
+        const user = await userModel.findOne({ email, password })
 
         if (!user) {
             return res.status(404).send('user not found')
