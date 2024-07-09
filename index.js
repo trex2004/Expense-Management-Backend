@@ -24,6 +24,8 @@ app.use('/api/v1/users',userRouter)
 app.use('/api/v1/transactions',transactionRouter)
 
 
+//static files
+
 //server start
 try{
     connectDB();
