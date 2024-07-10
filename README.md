@@ -3,7 +3,7 @@
 Live Website: [https://expense-manger-frontend.vercel.app/]
 ## Description
 
-Expense Tracker App is a web application made to assit users in tracking there expenses. This project was made using MERN (MongoDB, Express.js, React.js, and Node.js) stack to create a scalable, responsive, and user-friendly application.
+Expense Tracker App is a web application made to assist users in tracking there expenses. This project was made using MERN (MongoDB, Express.js, React.js, and Node.js) stack to create a scalable, responsive, and user-friendly application.
 
 This specific repository is the back part of the project. Node.js along with express is used to make API for handling client requests and serve as a backend for the application. MongoDB along with Mongoose ORM was used for schema creation and validation. 
 
